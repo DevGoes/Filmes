@@ -46,7 +46,7 @@ Acesse o projeto no link abaixo ou, se desejar rodar ele localmente em sua máqu
 git clone https://github.com/seu-usuario/seu-repo.git
 cd seu-repositório
 
-# Execute o comando a seguite tanto na pasta api e app
+# Execute o comando a seguir tanto na pasta api e app
 cp .env.example .env
 
 # Suba os containers
