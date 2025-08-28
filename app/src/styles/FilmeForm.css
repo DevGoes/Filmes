@@ -1,0 +1,68 @@
+.filme-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #f1f1f1;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.filme-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.filme-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.filme-form label {
+    font-weight: 500;
+    color: #ccc;
+}
+
+.filme-form input,
+.filme-form textarea {
+    padding: 10px 14px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.filme-form input:focus,
+.filme-form textarea:focus {
+    border-color: #0077ff;
+}
+
+.filme-form-error {
+    color: #ff4d4f;
+    font-size: 0.95rem;
+    margin-top: -4px;
+}
+
+.filme-form-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filme-form-btn:hover {
+    background-color: #d3d3d3;
+}

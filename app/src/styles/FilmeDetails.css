@@ -1,0 +1,183 @@
+.filme-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.filme-card {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    background-color: #0f0f0f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.filme-img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+}
+
+.filme-content {
+    flex: 1;
+    padding: 24px;
+    color: #f1f1f1;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.filme-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.filme-content p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.filme-content strong {
+    color: #fff;
+}
+
+.filme-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.filme-edit,
+.filme-delete {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+.filme-edit {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+.filme-edit:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+.filme-delete {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+.filme-delete:hover {
+    background-color: #5a2a2a;
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1);
+}
+
+.filme-edit:focus-visible,
+.filme-delete:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.15);
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: grid;
+    place-items: center;
+    z-index: 50;
+    padding: 16px;
+}
+
+.modal {
+    width: 100%;
+    max-width: 520px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    padding: 22px;
+    color: #eaeaea;
+}
+
+.modal h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.modal p {
+    margin: 0 0 18px 0;
+    color: #cfcfcf;
+    line-height: 1.5;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.btn-neutral,
+.btn-danger {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 14px;
+    transition: background-color .25s ease, transform .15s ease;
+}
+
+.btn-neutral {
+    background: #2d2d2d;
+    color: #fff;
+}
+.btn-neutral:hover { background: #3e3e3e; transform: translateY(-1px); }
+
+.btn-danger {
+    background: #232020;
+    color: #fff;
+    border: 1px solid #3a2a2a;
+}
+.btn-danger:hover { background: #5a2a2a; transform: translateY(-1px); }
+
+.btn-neutral:focus-visible,
+.btn-danger:focus-visible,
+.modal:focus-visible {
+    outline: 2px solid rgba(255,255,255,0.25);
+    outline-offset: 2px;
+}
+
+
+@media (max-width: 768px) {
+    .filme-card {
+        flex-direction: column;
+    }
+
+    .filme-img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .filme-content {
+        padding: 20px;
+    }
+}

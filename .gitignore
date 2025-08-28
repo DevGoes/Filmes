@@ -1,0 +1,28 @@
+# Node
+app/node_modules
+app/.env
+
+# Laravel
+api/vendor
+api/storage/*.key
+api/.env
+
+# Logs
+*.log
+*.log.*
+
+# Docker volumes (MySQL)
+mysql_data/
+
+# OS / editor configs
+.DS_Store
+*.swp
+*.swo
+*.bak
+
+# IDEs
+.vscode/
+.idea/
+
+# Git
+.git/

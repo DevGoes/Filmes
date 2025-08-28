@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1F2021;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f1f1f1;
+    overflow-x: hidden;
+}
