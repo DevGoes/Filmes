@@ -60,6 +60,9 @@ php artisan jwt:secret
 php artisan config:clear
 php artisan migrate
 
+# Acesse no navegador
+localhost:5173
+
 # Opção 2: Rodar manualmente (sem Docker)
 
 # 1. Backend (Laravel)
